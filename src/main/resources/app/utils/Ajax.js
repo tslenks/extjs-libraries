@@ -14,9 +14,7 @@ Ext.define('MyApp.utils.Ajax', {
 	timeout: 120000,
 
 	/** @inheritdoc */
-	request(options) {
-		console.log('launch a request');
-		console.log('launch a request', options);
+	request(options) {		
 		let url = (options || {}).url || '';
 		const headers = (options || {}).headers || {};		
 		if (url.startsWith('/')) {
@@ -32,7 +30,7 @@ Ext.define('MyApp.utils.Ajax', {
 				'x-csrf-token': 'testtoken',
 			});
 		}
-		console.log('url', url);
+
 		return this.callParent([Ext.apply(options || {}, {
 			url,
 			headers,
