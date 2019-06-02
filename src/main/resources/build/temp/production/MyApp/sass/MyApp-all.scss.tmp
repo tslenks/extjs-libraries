@@ -632,6 +632,7 @@ $include-ext-viewport-wp: dynamic(true);;
 $include-ext-viewport-windowsphone: dynamic(true);;
 $include-myapp-application: dynamic(true);;
 $include-myapp-requestajax: dynamic(true);;
+$include-myapp-override-ajax: dynamic(true);;
 $include-myapp-store-personnel: dynamic(true);;
 $include-myapp-view-main-list: dynamic(true);;
 $include-myapp-view-main-main: dynamic(true);;

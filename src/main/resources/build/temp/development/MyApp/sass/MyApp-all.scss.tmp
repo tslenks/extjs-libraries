@@ -1,6 +1,7 @@
 $app-name:  dynamic( 'MyApp' );
 $image-search-path: 'E:/workspace/extjs-libraries/src/main/resources/build/development/MyApp/classic/resources';
 $theme-name:  dynamic( 'theme-triton' );
+$include-createajax: dynamic(true);;
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
 $include-ext-abstractmanager: dynamic(true);;
@@ -910,6 +911,7 @@ $include-ext-window-window: dynamic(true);;
 $include-myapp-application: dynamic(true);;
 $include-myapp-requestajax: dynamic(true);;
 $include-myapp-store-personnel: dynamic(true);;
+$include-myapp-utils-ajax: dynamic(true);;
 $include-myapp-view-main-list: dynamic(true);;
 $include-myapp-view-main-main: dynamic(true);;
 $include-myapp-view-main-maincontroller: dynamic(true);;

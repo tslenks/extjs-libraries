@@ -7,8 +7,6 @@ Ext.define('MyApp.Application', {
     extend: 'Ext.app.Application',
 
     name: 'MyApp',
-    
-    requires:['MyApp.RequestAjax'],
 
     quickTips: false,
     
@@ -18,14 +16,19 @@ Ext.define('MyApp.Application', {
         }
     },
 
+    requires:['MyApp.utils.Ajax'],
+
     stores: [
         // TODO: add global / shared stores here
     ],
 
-    launch: function () {
-    	Ext.Ajax.request({
-			url:commonUtility.getServerUrl() + '/test1.test',
-    	});
+    launch: function () {		  	
+    	CreateAjax.request({
+			url: '/test1.test',
+			success:(response) => {				
+				console.log('response 12345', response)				
+			}
+    	});    	
     },
 
     onAppUpdate: function () {
