@@ -8,3 +8,4 @@ ext/**/.sencha
 .classpath
 .project
 .bat
+/.gradle
