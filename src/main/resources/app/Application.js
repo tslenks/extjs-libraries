@@ -8,27 +8,30 @@ Ext.define('MyApp.Application', {
 
     name: 'MyApp',
 
-    quickTips: false,
+    /*quickTips: false,
     
     platformConfig: {
         desktop: {
             quickTips: true
         }
-    },
+    },*/
 
-    requires:['MyApp.utils.Ajax'],
+    requires:[
+        'MyApp.utils.Ajax',
+        'MyApp.proxy.Ajax'
+    ],
 
     stores: [
         // TODO: add global / shared stores here
     ],
 
     launch: function () {		  	
-    	CreateAjax.request({
+    	/*CreateAjax.request({
 			url: '/test1.test',
 			success:(response) => {				
 				console.log('response 12345', response)				
 			}
-    	});    	
+    	}); */   	
     },
 
     onAppUpdate: function () {
