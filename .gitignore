@@ -4,3 +4,7 @@ classic.json*
 modern.json*
 ext/**/.sencha
 /bin
+/.settings
+.classpath
+.project
+.bat
